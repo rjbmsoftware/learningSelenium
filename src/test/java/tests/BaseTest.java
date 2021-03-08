@@ -9,7 +9,13 @@ import java.io.File;
 public class BaseTest {
     @Test
     public void startBrowserTest() {
-        String path = "src/test/resources/drivers/firefox/geckodriver.exe";
+        String os = System.getProperty("os.name").startsWith("Mac") ? "mac" : "windows";
+        String path;
+        if (os.equals("mac")) {
+            path = "src/test/resources/drivers/firefox/mac/geckodriver";
+        } else {
+            path = "src/test/resources/drivers/firefox/geckodriver.exe";
+        }
         File file = new File(path);
         String absolutePathToDriver = file.getAbsolutePath();
 
