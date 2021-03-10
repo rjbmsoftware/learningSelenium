@@ -11,6 +11,7 @@ public class BaseTest {
     @BeforeEach
     public void setup() {
         driver = DriverFactory.create();
+        driver.manage().window().maximize();
     }
 
     @AfterEach
