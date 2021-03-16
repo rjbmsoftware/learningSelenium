@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AuthorListNavigationProfileTest extends BaseTest {
     @Test
-    public void clickThrowToProfile() {
+    public void clickThroughToProfile() {
         int id = 7;
         String authorName = "Alan Hathway";
         AuthorListPage authorListPage = new AuthorListPage(this.driver);
@@ -22,5 +22,4 @@ public class AuthorListNavigationProfileTest extends BaseTest {
         assertEquals(id, authorDetailsPage.getAuthorID());
         assertEquals(authorName, authorDetailsPage.getAuthorName());
     }
-
 }
