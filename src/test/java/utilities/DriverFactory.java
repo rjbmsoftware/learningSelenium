@@ -13,7 +13,7 @@ public class DriverFactory {
         if (os.equals("mac")) {
             path = "src/test/resources/drivers/firefox/mac/geckodriver";
         } else {
-            path = "src/test/resources/drivers/firefox/geckodriver.exe";
+            path = "src/test/resources/drivers/firefox/windows/geckodriver.exe";
         }
         File file = new File(path);
         String absolutePathToDriver = file.getAbsolutePath();

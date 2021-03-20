@@ -6,7 +6,7 @@ import pages.HomePage;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class HomePageAvailable extends BaseTest {
+public class HomePageAvailableTest extends BaseTest {
     @Test
     public void homePageTest() {
         driver.get(HomePage.getURL());

@@ -19,3 +19,7 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+tasks.withType(Test) {
+    maxParallelForks = 4 //Runtime.runtime.availableProcessors()
+}

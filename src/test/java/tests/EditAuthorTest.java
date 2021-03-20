@@ -8,7 +8,7 @@ import utilities.AuthorService;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EditAuthor extends BaseTest {
+public class EditAuthorTest extends BaseTest {
     @Test
     public void editAuthorChangesPersist() {
         // create author knowing id
